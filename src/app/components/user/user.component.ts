@@ -17,16 +17,4 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  details(id: number) {
-    this.postService.getPostsOfUser(id).subscribe(postsOfUser => {
-      console.log(postsOfUser)
-      for (const post of postsOfUser) {
-        this.commentService
-          .getCommentsOfPost(post.id)
-          .subscribe(commentsOfPostOfUser => console.log(commentsOfPostOfUser));
-
-      }
-    });
-  }
 }

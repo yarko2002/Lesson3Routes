@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Lesson3Routes"
+    }
+  },
+  "defaultProject": "Lesson3Routes",
+  "cli": {
+    "analytics": false
+  }
 }
